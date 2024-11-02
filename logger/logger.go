@@ -15,7 +15,7 @@ var (
 	LOG_PATH       = env.GetEnv("LOG_INFO_PATH")
 	LOG_ERROR_PATH = env.GetEnv("LOG_ERROR_PATH")
 	LOG_LEVEL      = env.GetEnv("LOG_LEVEL")
-	AMBIENTE_DEV   = env.GetAmbienteDev()
+	AMBIENTE_DEV   = env.GetEnvironmentIsDev()
 )
 
 func init() {
