@@ -18,3 +18,19 @@ func GetEnvInt32(valor string) int32 {
 func GetEnvBool(valor string) bool {
 	return os.Getenv(valor) == "true"
 }
+
+func GetPort() string {
+	return os.Getenv("PORT")
+}
+
+func GetTimeShutdown() string {
+	return os.Getenv("TIME_SHUTDOWN")
+}
+
+func GetEnvironmentDev() bool {
+	return os.Getenv("ENV") == "local"
+}
+
+func GetAppName() string {
+	return os.Getenv("APP_NAME")
+}
